@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTotalAccounts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_text"
+        android:padding="12dp"
+        android:text="@string/total_accounts"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/tvTotalBrands"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTotalBrands"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_text"
+        android:padding="12dp"
+        android:text="@string/total_brands"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvTotalAccounts"
+        app:layout_constraintTop_toTopOf="@id/tvTotalAccounts" />
+
+    <TextView
+        android:id="@+id/tvTotalLocations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_text"
+        android:padding="12dp"
+        android:text="@string/total_location"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/tvTotalBrands"
+        app:layout_constraintStart_toStartOf="@id/tvTotalAccounts"
+        app:layout_constraintTop_toBottomOf="@id/tvTotalBrands" />
+
+    <TextView
+        android:id="@+id/tvSelectAccNo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:background="@color/off_white"
+        android:drawableEnd="@drawable/ic_right_arrow"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="6dp"
+        android:text="@string/select_acc_no"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTotalLocations" />
+
+    <TextView
+        android:id="@+id/tvSelectBrand"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/off_white"
+        android:drawableEnd="@drawable/ic_right_arrow"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="6dp"
+        android:text="@string/select_brand"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSelectAccNo" />
+
+    <TextView
+        android:id="@+id/tvSelectLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/off_white"
+        android:drawableEnd="@drawable/ic_right_arrow"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="6dp"
+        android:text="@string/select_location"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSelectBrand" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
